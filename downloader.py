@@ -11,7 +11,6 @@ def start_funct():
     else:  
         result = False
 
-    # Finally, you can use the result from the above test and run further code accordingly
     if result == False:
         print ("URL not defined...!!!")
         print ("Usage: python3 downloader.py URL_of_the_file_to_download")
