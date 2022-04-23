@@ -77,7 +77,7 @@ def downloader(attempt_round,file,file_url,file_name,file_size_online,file_size_
         initial_pos = 0
         
     try:
-        with requests.get(file_url, stream=True, headers=custom_header, timeout=15) as r:
+        with requests.get(file_url, stream=True, headers=custom_header, timeout=30) as r:
             print ("Download response status code: " + str(r.status_code))
             print ("Request headers: " + str(r.request.headers))
             print ("Response headers: " + str(r.headers) + "\n")
