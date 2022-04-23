@@ -7,7 +7,7 @@ The script request the file size in bytes to the server,
 then checks if the file exist in the local storage, if so,
 read its size and compare if it is completely downloaded, if not,
 starts to download from the remaining bytes.
-At the end, shows the MD5 and SHA256 sums.Cancel changes
+At the end, shows the MD5 and SHA256 sums.
 
 When the connection is timed out (30s) due to a network issue,
 it retries the download process, until the file is complete.
