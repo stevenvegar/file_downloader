@@ -12,12 +12,14 @@ At the end, shows the MD5 and SHA256 sums.Cancel changes
 When the connection is timed out (30s) due to a network issue,
 it retries the download process, until the file is complete.
 
+### Usage:
+ python3 downloader.py URL_of_file_to_download
+ 
+![screenshot](https://myoctocat.com/assets/images/base-octocat.svg)
 
-Usage:
-python3 downloader.py URL_of_file_to_download
 
 
-TODO:
--Add support to multiple URLs in text file.
--Add checking with a supplied hash sum.
--Parallel downloadings.
+### TODO:
+- Add support to multiple URLs in text file.
+- Add checking with a supplied hash sum.
+- Parallel downloadings.
