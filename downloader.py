@@ -87,14 +87,14 @@ def downloader(attempt_round,file,file_url,file_name,file_size_online,file_size_
                     for chunk in r.iter_content(128 * block_size):
                         output.write(chunk)
                         pbar.update(len(chunk))
-                check_completition(attempt_round,file,file_url,file_name,file_size_online)
+                check_completion(attempt_round,file,file_url,file_name,file_size_online)
     except requests.exceptions.ConnectionError:
-        check_completition(attempt_round,file,file_url,file_name,file_size_online)
+        check_completion(attempt_round,file,file_url,file_name,file_size_online)
     except Exception as e:
         print ("Request exception: " + str(e))
 
 
-def check_completition(attempt_round,file,file_url,file_name,file_size_online):
+def check_completion(attempt_round,file,file_url,file_name,file_size_online):
     file_size_offline = file.stat().st_size
     if file_size_offline != file_size_online:
         check_file(attempt_round,file_url,file_name,file_size_online)
