@@ -15,7 +15,7 @@ it retries the download process, until the file is complete.
 ### Usage:
  python3 downloader.py URL_of_file_to_download
  
-![screenshot](https://myoctocat.com/assets/images/base-octocat.svg)
+![screenshot](https://github.com/stevenvegar/file_downloader/blob/main/screenshot.png)
 
 
 
